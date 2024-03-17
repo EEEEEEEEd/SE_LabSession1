@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
         try {
             System.out.println(3 / 0);
-        } catch (Exception e) {
-            System.out.printf("Caught runtime exception = %s\n", e.getMessage());
+        } catch (ArithmeticException e) { // 指定要捕获的异常为ArithmeticException
+            System.out.printf("Caught arithmetic exception = %s\n", e.getMessage());
         }
     }
 
