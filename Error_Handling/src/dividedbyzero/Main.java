@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             System.out.println(3 / 0);
-        } catch (ArithmeticException e) { // Spécifie que l'exception à capturer est ArithmeticException
+        } catch (Exception e) { // Spécifie que l'exception à capturer est ArithmeticException
             System.out.printf("Caught arithmetic exception = %s\n", e.getMessage());
         }
     }
